@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="Portal.Modules.OrientalSails.Domain"
+                   assembly="Portal.Modules.OrientalSails">
+  <class name="ActivityLogging" table="res_ActivityLogging" batch-size="10">
+    <cache usage="read-write"/>
+    <id name="Id">
+      <generator class="native" />
+    </id>
+    <property name="CreatedTime"/>
+    <property name="Function" column="[Function]"/>
+    <property name="Detail"/>
+    <property name="ObjectId"/>
+    <many-to-one name="CreatedBy" column="CreatedBy_UserId" class="CMS.Core.Domain.User, CMS.Core" not-found="ignore"/>
+  </class>
+</hibernate-mapping>

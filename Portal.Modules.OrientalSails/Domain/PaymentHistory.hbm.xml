@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="Portal.Modules.OrientalSails.Domain"
+                   assembly="Portal.Modules.OrientalSails">
+  <class name="PaymentHistory" table="PaymentHistory" batch-size="10">
+    <cache usage="read-write"/>
+    <id name="Id">
+      <generator class="native" />
+    </id>
+    <property name="Amount"/>
+    <property name="Time"/>
+    <property name="IsPayByBankAccount"/>
+    <many-to-one name="Createdby" column="Createdby_UserId" class="CMS.Core.Domain.User, CMS.Core"/>
+    <many-to-one name="Payby" column="Payby_AgencyId" class="Agency"/>
+    <many-to-one name="RestaurantBooking" column="BookingId" class="RestaurantBooking"/>
+    <many-to-one name="BankAccount" column="BankAccId" class="BankAccount"/>
+    <many-to-one name="PaymentGroup" column="PaymentGroupId" class="PaymentGroup"/>
+  </class>
+</hibernate-mapping>

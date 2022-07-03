@@ -1,0 +1,2 @@
+2018-06-22 14:05:38,707 [5] ERROR NHibernate.LazyInitializationException [(null)] <(null)> - Initializing[Portal.Modules.OrientalSails.Domain.Menu#3]-Could not initialize proxy - no Session.
+NHibernate.LazyInitializationException: Initializing[Portal.Modules.OrientalSails.Domain.Menu#3]-Could not initialize proxy - no Session.

@@ -1,0 +1,50 @@
+D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\Portal.Modules.Orientalsails.HangFire\bin\Debug\Portal.Modules.Orientalsails.HangFire.dll
+D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\Portal.Modules.Orientalsails.HangFire\bin\Debug\Portal.Modules.Orientalsails.HangFire.pdb
+D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\Portal.Modules.Orientalsails.HangFire\bin\Debug\log4net.dll
+D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\Portal.Modules.Orientalsails.HangFire\bin\Debug\Portal.Modules.OrientalSails.Service.Share.dll
+D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\Portal.Modules.Orientalsails.HangFire\bin\Debug\Portal.Modules.OrientalSails.Service.Share.pdb
+D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\Portal.Modules.Orientalsails.HangFire\obj\Debug\Portal.Modules.OrientalSails.HangFire.csprojResolveAssemblyReference.cache
+D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\Portal.Modules.Orientalsails.HangFire\obj\Debug\Portal.Modules.Orientalsails.HangFire.dll
+D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\Portal.Modules.Orientalsails.HangFire\obj\Debug\Portal.Modules.Orientalsails.HangFire.pdb
+E:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\Portal.Modules.Orientalsails.HangFire\bin\Debug\Portal.Modules.Orientalsails.HangFire.dll
+E:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\Portal.Modules.Orientalsails.HangFire\bin\Debug\Portal.Modules.Orientalsails.HangFire.pdb
+E:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\Portal.Modules.Orientalsails.HangFire\bin\Debug\log4net.dll
+E:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\Portal.Modules.Orientalsails.HangFire\bin\Debug\Portal.Modules.OrientalSails.Service.Share.dll
+E:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\Portal.Modules.Orientalsails.HangFire\bin\Debug\Portal.Modules.OrientalSails.Service.Share.pdb
+E:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\Portal.Modules.Orientalsails.HangFire\obj\Debug\Portal.Modules.OrientalSails.HangFire.csprojResolveAssemblyReference.cache
+E:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\Portal.Modules.Orientalsails.HangFire\obj\Debug\Portal.Modules.Orientalsails.HangFire.dll
+E:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\Portal.Modules.Orientalsails.HangFire\obj\Debug\Portal.Modules.Orientalsails.HangFire.pdb
+E:\Workspace\Visual Studio 2013 Projects\restaurant-net45-bitbucket\Portal.Modules.Orientalsails.HangFire\bin\Debug\Portal.Modules.Orientalsails.HangFire.dll
+E:\Workspace\Visual Studio 2013 Projects\restaurant-net45-bitbucket\Portal.Modules.Orientalsails.HangFire\bin\Debug\Portal.Modules.Orientalsails.HangFire.pdb
+E:\Workspace\Visual Studio 2013 Projects\restaurant-net45-bitbucket\Portal.Modules.Orientalsails.HangFire\bin\Debug\log4net.dll
+E:\Workspace\Visual Studio 2013 Projects\restaurant-net45-bitbucket\Portal.Modules.Orientalsails.HangFire\bin\Debug\Portal.Modules.OrientalSails.Service.Share.dll
+E:\Workspace\Visual Studio 2013 Projects\restaurant-net45-bitbucket\Portal.Modules.Orientalsails.HangFire\bin\Debug\Portal.Modules.OrientalSails.Service.Share.pdb
+E:\Workspace\Visual Studio 2013 Projects\restaurant-net45-bitbucket\Portal.Modules.Orientalsails.HangFire\obj\Debug\Portal.Modules.OrientalSails.HangFire.csprojResolveAssemblyReference.cache
+E:\Workspace\Visual Studio 2013 Projects\restaurant-net45-bitbucket\Portal.Modules.Orientalsails.HangFire\obj\Debug\Portal.Modules.Orientalsails.HangFire.dll
+E:\Workspace\Visual Studio 2013 Projects\restaurant-net45-bitbucket\Portal.Modules.Orientalsails.HangFire\obj\Debug\Portal.Modules.Orientalsails.HangFire.pdb
+C:\Users\Administrator\Desktop\mo honglong\Portal.Modules.Orientalsails.HangFire\bin\Debug\Portal.Modules.Orientalsails.HangFire.dll
+C:\Users\Administrator\Desktop\mo honglong\Portal.Modules.Orientalsails.HangFire\bin\Debug\Portal.Modules.Orientalsails.HangFire.pdb
+C:\Users\Administrator\Desktop\mo honglong\Portal.Modules.Orientalsails.HangFire\bin\Debug\log4net.dll
+C:\Users\Administrator\Desktop\mo honglong\Portal.Modules.Orientalsails.HangFire\bin\Debug\Portal.Modules.OrientalSails.Service.Share.dll
+C:\Users\Administrator\Desktop\mo honglong\Portal.Modules.Orientalsails.HangFire\bin\Debug\Portal.Modules.OrientalSails.Service.Share.pdb
+C:\Users\Administrator\Desktop\mo honglong\Portal.Modules.Orientalsails.HangFire\obj\Debug\Portal.Modules.OrientalSails.HangFire.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\mo honglong\Portal.Modules.Orientalsails.HangFire\obj\Debug\Portal.Modules.Orientalsails.HangFire.dll
+C:\Users\Administrator\Desktop\mo honglong\Portal.Modules.Orientalsails.HangFire\obj\Debug\Portal.Modules.Orientalsails.HangFire.pdb
+C:\Users\Thieu\Desktop\mo honglong\Portal.Modules.Orientalsails.HangFire\bin\Debug\Portal.Modules.Orientalsails.HangFire.dll
+C:\Users\Thieu\Desktop\mo honglong\Portal.Modules.Orientalsails.HangFire\bin\Debug\Portal.Modules.Orientalsails.HangFire.pdb
+C:\Users\Thieu\Desktop\mo honglong\Portal.Modules.Orientalsails.HangFire\bin\Debug\log4net.dll
+C:\Users\Thieu\Desktop\mo honglong\Portal.Modules.Orientalsails.HangFire\bin\Debug\Portal.Modules.OrientalSails.Service.Share.dll
+C:\Users\Thieu\Desktop\mo honglong\Portal.Modules.Orientalsails.HangFire\bin\Debug\Portal.Modules.OrientalSails.Service.Share.pdb
+C:\Users\Thieu\Desktop\mo honglong\Portal.Modules.Orientalsails.HangFire\obj\Debug\Portal.Modules.OrientalSails.HangFire.csprojResolveAssemblyReference.cache
+C:\Users\Thieu\Desktop\mo honglong\Portal.Modules.Orientalsails.HangFire\obj\Debug\Portal.Modules.Orientalsails.HangFire.dll
+C:\Users\Thieu\Desktop\mo honglong\Portal.Modules.Orientalsails.HangFire\obj\Debug\Portal.Modules.Orientalsails.HangFire.pdb
+D:\Project\mo_projects-nhahang_honglong-23e1c170b58e\mo_projects-nhahang_honglong-23e1c170b58e\Portal.Modules.Orientalsails.HangFire\bin\Debug\Portal.Modules.Orientalsails.HangFire.dll
+D:\Project\mo_projects-nhahang_honglong-23e1c170b58e\mo_projects-nhahang_honglong-23e1c170b58e\Portal.Modules.Orientalsails.HangFire\bin\Debug\Portal.Modules.Orientalsails.HangFire.pdb
+D:\Project\mo_projects-nhahang_honglong-23e1c170b58e\mo_projects-nhahang_honglong-23e1c170b58e\Portal.Modules.Orientalsails.HangFire\bin\Debug\log4net.dll
+D:\Project\mo_projects-nhahang_honglong-23e1c170b58e\mo_projects-nhahang_honglong-23e1c170b58e\Portal.Modules.Orientalsails.HangFire\bin\Debug\Portal.Modules.OrientalSails.Service.Share.dll
+D:\Project\mo_projects-nhahang_honglong-23e1c170b58e\mo_projects-nhahang_honglong-23e1c170b58e\Portal.Modules.Orientalsails.HangFire\bin\Debug\Portal.Modules.OrientalSails.Service.Share.pdb
+D:\Project\mo_projects-nhahang_honglong-23e1c170b58e\mo_projects-nhahang_honglong-23e1c170b58e\Portal.Modules.Orientalsails.HangFire\obj\Debug\Portal.Modules.OrientalSails.HangFire.csproj.AssemblyReference.cache
+D:\Project\mo_projects-nhahang_honglong-23e1c170b58e\mo_projects-nhahang_honglong-23e1c170b58e\Portal.Modules.Orientalsails.HangFire\obj\Debug\Portal.Modules.OrientalSails.HangFire.csproj.CoreCompileInputs.cache
+D:\Project\mo_projects-nhahang_honglong-23e1c170b58e\mo_projects-nhahang_honglong-23e1c170b58e\Portal.Modules.Orientalsails.HangFire\obj\Debug\Portal.Modules.OrientalSails.HangFire.csproj.CopyComplete
+D:\Project\mo_projects-nhahang_honglong-23e1c170b58e\mo_projects-nhahang_honglong-23e1c170b58e\Portal.Modules.Orientalsails.HangFire\obj\Debug\Portal.Modules.Orientalsails.HangFire.dll
+D:\Project\mo_projects-nhahang_honglong-23e1c170b58e\mo_projects-nhahang_honglong-23e1c170b58e\Portal.Modules.Orientalsails.HangFire\obj\Debug\Portal.Modules.Orientalsails.HangFire.pdb

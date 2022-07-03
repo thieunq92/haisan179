@@ -1,0 +1,24 @@
+2018-06-18 10:27:57,803 [97] ERROR NHibernate.Util.ReflectHelper [(null)] <(null)> - Could not load type Portal.Modules.OrientalSails.Domain.RestaurantBooking, Portal.Modules.OrientalSails.
+System.TypeLoadException: Could not load type 'Portal.Modules.OrientalSails.Domain.RestaurantBooking' from assembly 'Portal.Modules.OrientalSails, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at System.Reflection.Assembly.GetType(String name, Boolean throwOnError)
+   at NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+2018-06-18 10:27:57,828 [97] ERROR NHibernate.Cfg.Configuration [(null)] <(null)> - Could not compile the mapping document: Portal.Modules.OrientalSails.Domain.RestaurantBooking.hbm.xml
+NHibernate.MappingException: Could not compile the mapping document: Portal.Modules.OrientalSails.Domain.RestaurantBooking.hbm.xml ---> NHibernate.MappingException: persistent class Portal.Modules.OrientalSails.Domain.RestaurantBooking, Portal.Modules.OrientalSails not found ---> System.TypeLoadException: Could not load type 'Portal.Modules.OrientalSails.Domain.RestaurantBooking' from assembly 'Portal.Modules.OrientalSails, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at System.Reflection.Assembly.GetType(String name, Boolean throwOnError)
+   at NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+   at NHibernate.Util.ReflectHelper.ClassForName(String name)
+   at NHibernate.Cfg.XmlHbmBinding.Binder.ClassForFullNameChecked(String fullName, String errorMessage)
+   --- End of inner exception stack trace ---
+   at NHibernate.Cfg.XmlHbmBinding.Binder.ClassForFullNameChecked(String fullName, String errorMessage)
+   at NHibernate.Cfg.XmlHbmBinding.Binder.ClassForNameChecked(String name, Mappings mappings, String errorMessage)
+   at NHibernate.Cfg.XmlHbmBinding.ClassBinder.BindClass(IEntityMapping classMapping, PersistentClass model, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(HbmClass classSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddRootClasses(HbmClass rootClass, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddEntitiesMappings(HbmMapping mappingSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.Bind(HbmMapping mappingSchema)
+   at NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- End of inner exception stack trace ---

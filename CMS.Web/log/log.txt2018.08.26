@@ -1,0 +1,29 @@
+2018-07-02 07:11:54,988 [54] ERROR NHibernate.Cfg.Configuration [(null)] <(null)> - Could not compile the mapping document: Portal.Modules.OrientalSails.Domain.ServiceOutsideDetail.hbm.xml
+NHibernate.MappingException: Could not compile the mapping document: Portal.Modules.OrientalSails.Domain.ServiceOutsideDetail.hbm.xml ---> NHibernate.DuplicateMappingException: Duplicate class/entity mapping Portal.Modules.OrientalSails.Domain.ServiceOutside
+   at NHibernate.Cfg.Mappings.AddClass(PersistentClass persistentClass)
+   at NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(HbmClass classSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddRootClasses(HbmClass rootClass, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddEntitiesMappings(HbmMapping mappingSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.Bind(HbmMapping mappingSchema)
+   at NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- End of inner exception stack trace ---
+2018-07-02 07:12:45,793 [80] ERROR NHibernate.Cfg.Configuration [(null)] <(null)> - Could not compile the mapping document: Portal.Modules.OrientalSails.Domain.ServiceOutsideDetail.hbm.xml
+NHibernate.MappingException: Could not compile the mapping document: Portal.Modules.OrientalSails.Domain.ServiceOutsideDetail.hbm.xml ---> NHibernate.MappingException: Problem trying to set property type by reflection ---> NHibernate.MappingException: class Portal.Modules.OrientalSails.Domain.ServiceOutsideDetail, Portal.Modules.OrientalSails, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null not found while looking for property: Service ---> NHibernate.PropertyNotFoundException: Could not find a getter for property 'Service' in class 'Portal.Modules.OrientalSails.Domain.ServiceOutsideDetail'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Util.ReflectHelper.GetGetter(Type theClass, String propertyName, String propertyAccessorName)
+   at NHibernate.Util.ReflectHelper.ReflectedPropertyClass(String className, String name, String accessorName)
+   --- End of inner exception stack trace ---
+   at NHibernate.Util.ReflectHelper.ReflectedPropertyClass(String className, String name, String accessorName)
+   at NHibernate.Mapping.SimpleValue.SetTypeUsingReflection(String className, String propertyName, String accesorName)
+   --- End of inner exception stack trace ---
+   at NHibernate.Mapping.SimpleValue.SetTypeUsingReflection(String className, String propertyName, String accesorName)
+   at NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.CreateProperty(IEntityPropertyMapping propertyMapping, String propertyOwnerClassName, IValue value, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.Bind(IEnumerable`1 properties, Table table, IDictionary`2 inheritedMetas, Action`1 modifier, Action`1 addToModelAction)
+   at NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.Bind(IEnumerable`1 properties, IDictionary`2 inheritedMetas, Action`1 modifier)
+   at NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.Bind(IEnumerable`1 properties, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(HbmClass classSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddRootClasses(HbmClass rootClass, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddEntitiesMappings(HbmMapping mappingSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.Bind(HbmMapping mappingSchema)
+   at NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- End of inner exception stack trace ---

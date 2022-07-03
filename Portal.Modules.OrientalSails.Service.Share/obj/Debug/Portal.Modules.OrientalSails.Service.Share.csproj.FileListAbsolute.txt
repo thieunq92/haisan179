@@ -1,0 +1,26 @@
+D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\Portal.Modules.OrientalSails.Service.Share\bin\Debug\Portal.Modules.OrientalSails.Service.Share.dll
+D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\Portal.Modules.OrientalSails.Service.Share\bin\Debug\Portal.Modules.OrientalSails.Service.Share.pdb
+D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\Portal.Modules.OrientalSails.Service.Share\obj\Debug\Portal.Modules.OrientalSails.Service.Share.csprojResolveAssemblyReference.cache
+D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\Portal.Modules.OrientalSails.Service.Share\obj\Debug\Portal.Modules.OrientalSails.Service.Share.dll
+D:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\Portal.Modules.OrientalSails.Service.Share\obj\Debug\Portal.Modules.OrientalSails.Service.Share.pdb
+E:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\Portal.Modules.OrientalSails.Service.Share\bin\Debug\Portal.Modules.OrientalSails.Service.Share.dll
+E:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\Portal.Modules.OrientalSails.Service.Share\bin\Debug\Portal.Modules.OrientalSails.Service.Share.pdb
+E:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\Portal.Modules.OrientalSails.Service.Share\obj\Debug\Portal.Modules.OrientalSails.Service.Share.csprojResolveAssemblyReference.cache
+E:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\Portal.Modules.OrientalSails.Service.Share\obj\Debug\Portal.Modules.OrientalSails.Service.Share.dll
+E:\Workspace\Visual Studio 2013 Projects\orientalsails-net45\Portal.Modules.OrientalSails.Service.Share\obj\Debug\Portal.Modules.OrientalSails.Service.Share.pdb
+C:\Users\Administrator\Desktop\mo honglong\Portal.Modules.OrientalSails.Service.Share\bin\Debug\Portal.Modules.OrientalSails.Service.Share.dll
+C:\Users\Administrator\Desktop\mo honglong\Portal.Modules.OrientalSails.Service.Share\bin\Debug\Portal.Modules.OrientalSails.Service.Share.pdb
+C:\Users\Administrator\Desktop\mo honglong\Portal.Modules.OrientalSails.Service.Share\obj\Debug\Portal.Modules.OrientalSails.Service.Share.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\mo honglong\Portal.Modules.OrientalSails.Service.Share\obj\Debug\Portal.Modules.OrientalSails.Service.Share.dll
+C:\Users\Administrator\Desktop\mo honglong\Portal.Modules.OrientalSails.Service.Share\obj\Debug\Portal.Modules.OrientalSails.Service.Share.pdb
+C:\Users\Thieu\Desktop\mo honglong\Portal.Modules.OrientalSails.Service.Share\bin\Debug\Portal.Modules.OrientalSails.Service.Share.dll
+C:\Users\Thieu\Desktop\mo honglong\Portal.Modules.OrientalSails.Service.Share\bin\Debug\Portal.Modules.OrientalSails.Service.Share.pdb
+C:\Users\Thieu\Desktop\mo honglong\Portal.Modules.OrientalSails.Service.Share\obj\Debug\Portal.Modules.OrientalSails.Service.Share.csprojResolveAssemblyReference.cache
+C:\Users\Thieu\Desktop\mo honglong\Portal.Modules.OrientalSails.Service.Share\obj\Debug\Portal.Modules.OrientalSails.Service.Share.dll
+C:\Users\Thieu\Desktop\mo honglong\Portal.Modules.OrientalSails.Service.Share\obj\Debug\Portal.Modules.OrientalSails.Service.Share.pdb
+D:\Project\mo_projects-nhahang_honglong-23e1c170b58e\mo_projects-nhahang_honglong-23e1c170b58e\Portal.Modules.OrientalSails.Service.Share\bin\Debug\Portal.Modules.OrientalSails.Service.Share.dll
+D:\Project\mo_projects-nhahang_honglong-23e1c170b58e\mo_projects-nhahang_honglong-23e1c170b58e\Portal.Modules.OrientalSails.Service.Share\bin\Debug\Portal.Modules.OrientalSails.Service.Share.pdb
+D:\Project\mo_projects-nhahang_honglong-23e1c170b58e\mo_projects-nhahang_honglong-23e1c170b58e\Portal.Modules.OrientalSails.Service.Share\obj\Debug\Portal.Modules.OrientalSails.Service.Share.csproj.AssemblyReference.cache
+D:\Project\mo_projects-nhahang_honglong-23e1c170b58e\mo_projects-nhahang_honglong-23e1c170b58e\Portal.Modules.OrientalSails.Service.Share\obj\Debug\Portal.Modules.OrientalSails.Service.Share.csproj.CoreCompileInputs.cache
+D:\Project\mo_projects-nhahang_honglong-23e1c170b58e\mo_projects-nhahang_honglong-23e1c170b58e\Portal.Modules.OrientalSails.Service.Share\obj\Debug\Portal.Modules.OrientalSails.Service.Share.dll
+D:\Project\mo_projects-nhahang_honglong-23e1c170b58e\mo_projects-nhahang_honglong-23e1c170b58e\Portal.Modules.OrientalSails.Service.Share\obj\Debug\Portal.Modules.OrientalSails.Service.Share.pdb

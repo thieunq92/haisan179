@@ -1,0 +1,27 @@
+﻿<tr>
+            <td width=121 valign=top style='width:90.9pt;padding:0in 5.4pt 0in 5.4pt'>
+                <p class=MsoPlainText>
+                    <span style='font-family:"Arial","sans-serif"'>
+                        Dịch vụ ngoài:
+                    </span>
+                </p>
+            </td>
+            <td width=315 valign=top style='width:236.35pt;padding:0in 5.4pt 0in 5.4pt'>
+                <p class=MsoPlainText><span style='font-family:"Arial","sans-serif"'></span></p>
+            </td>
+        </tr>
+<tr>
+            <td colspan="4" width=121 valign=top style='width:90.9pt;padding:0in 5.4pt 0in 5.4pt'>
+                <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+                       style='border-collapse: collapse; border: none'>
+                    <tr>
+                        <td style='width:90.9pt;padding:0in 5.4pt 0in 5.4pt'>Dịch vụ	</td>
+                        <td style='width:90.9pt;padding:0in 5.4pt 0in 5.4pt'>Đơn giá</td>
+                        <td style='width:90.9pt;padding:0in 5.4pt 0in 5.4pt'>Số lượng	</td>
+                        <td style='width:90.9pt;padding:0in 5.4pt 0in 5.4pt'>Thành tiền	</td>
+                        <td style='width:90.9pt;padding:0in 5.4pt 0in 5.4pt'>VAT	</td>
+                    </tr>
+                    {DVNGOAI}
+                </table>
+            </td>
+        </tr>

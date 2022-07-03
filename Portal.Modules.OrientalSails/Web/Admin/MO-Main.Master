@@ -1,0 +1,443 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MO-Main.master.cs" Inherits="Portal.Modules.OrientalSails.Web.Admin.MO_Main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="/favicon.gif" />
+    <link rel="stylesheet" type="text/css" href="/css/normalize/v5.0.0/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap/v3.3.7/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/jqueryui/v1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/datetimepicker/v2.5.4/jquery.datetimepicker.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/mo/main.css" />
+    <link rel="stylesheet" type="text/css" href="/css/colorbox/v1.6.4/colorbox.css" />
+    <link rel="stylesheet" type="text/css" href="/css/mo/non-responsive.css" />
+    <link rel="stylesheet" type="text/css" href="/css/datatable/v1.10.16/datatables.bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Scripts/tooltipster/css/tooltipster.bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Scripts/tooltipster/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-borderless.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/jqueryconfirm/v3.3.0/jquery-confirm.css" />
+    <asp:ContentPlaceHolder ID="HeadMain" runat="server">
+    </asp:ContentPlaceHolder>
+    <script>
+        function resizeIframe(obj) {
+            obj.style.height = 0;
+            obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+        }
+    </script>
+</head>
+<body>
+    <form name="form1" runat="server" enctype="multipart/form-data" ng-app="myApp">
+        <asp:ContentPlaceHolder ID="ScriptManagerMain" runat="server">
+        </asp:ContentPlaceHolder>
+        <div class="container-fluid">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand">Nhà hàng Hồng Long</a>
+                    </div>
+                    <div id="navbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="DashBoard.aspx?NodeId=1&SectionId=15">Bảng tổng hợp</a></li>
+                            <li class="dropdown" id="tabBooking" runat="server">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Đặt chỗ<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li id="pAddBooking" runat="server">
+                                        <asp:HyperLink ID="hlAddBooking" runat="server" NavigateUrl="BookingAdding.aspx?NodeId=1&SectionId=15">Thêm đặt chỗ</asp:HyperLink></li>
+                                    <li id="pBookingList" runat="server">
+                                        <asp:HyperLink ID="hlBookingList" runat="server" NavigateUrl="BookingManagement.aspx?NodeId=1&SectionId=15">Quản lý đặt chỗ</asp:HyperLink></li>
+                                    <li id="pAddSeriesBookings" runat="server" style="display: none">
+                                        <asp:HyperLink ID="hlAddSerialBookings" runat="server">Series Booking Adding</asp:HyperLink></li>
+                                    <li id="pSerialManager" runat="server" style="display: none">
+                                        <asp:HyperLink ID="hplSeriesManager" runat="server">Series Booking Management</asp:HyperLink></li>
+                                    <li id="pOrders" runat="server" style="display: none">
+                                        <asp:HyperLink ID="hlOrders" runat="server">Booking Pending</asp:HyperLink></li>
+                                    <li id="pBookingDate" runat="server">
+                                        <asp:HyperLink ID="hlBookingDate" runat="server" NavigateUrl="RestaurantBookingByDate.aspx?NodeId=1&SectionId=15">Quản lý đặt chỗ theo ngày</asp:HyperLink></li>
+                                    <li id="pBookingReport" runat="server" style="display: none">
+                                        <asp:HyperLink ID="hlBookingPeriod" runat="server">Booking By Period</asp:HyperLink></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown" id="tabReports" runat="server">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Báo cáo <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li id="pIncomeReport" runat="server" style="display: none">
+                                        <asp:HyperLink ID="hlIncomeReport" runat="server">Revenue</asp:HyperLink></li>
+                                    <li>
+                                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="Revenue.aspx?NodeId=1&SectionId=15">Báo cáo doanh thu</asp:HyperLink></li>
+                                    <li id="pReceivable" runat="server">
+                                        <asp:HyperLink ID="hlIncomeOwn" runat="server" NavigateUrl="Receivables.aspx?NodeId=1&SectionId=15">Báo cáo công nợ</asp:HyperLink></li>
+                                    <li>
+                                        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="ReportVAT.aspx?NodeId=1&SectionId=15">Báo cáo quản lý VAT</asp:HyperLink></li>
+                                    <li>
+                                        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="ReportDebtReceivables.aspx?NodeId=1&SectionId=15">Báo cáo nợ phải thu</asp:HyperLink></li>
+
+                                    <li id="pExpenseReport" runat="server" style="display: none">
+                                        <asp:HyperLink ID="hlExpenseReport" runat="server">Expense Report</asp:HyperLink></li>
+                                    <li id="pHaiPhongExpenseReport" runat="server" style="display: none">
+                                        <asp:HyperLink ID="hlHaiPhongExpenseReport" runat="server">Hai Phong Expense Report</asp:HyperLink>
+                                    </li>
+                                    <li id="pPayable" runat="server" style="display: none">
+                                        <asp:HyperLink ID="hlExpenseDebt" runat="server">Payable Report</asp:HyperLink></li>
+                                    <li id="pBalance" runat="server" style="display: none">
+                                        <asp:HyperLink ID="hlBalance" runat="server">Balance</asp:HyperLink></li>
+                                    <li id="pSummary" runat="server" style="display: none">
+                                        <asp:HyperLink ID="hlReceiablePayable" runat="server">Receivable/Payable Summary</asp:HyperLink></li>
+                                    <li id="pInspection" runat="server" style="display: none">
+                                        <asp:HyperLink ID="hlInspection" runat="server">Inspection Report</asp:HyperLink></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tài khoản NH <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="BankAccountList.aspx?NodeId=1&SectionId=15">Danh sách tài khoản</asp:HyperLink></li>
+                                    <li>
+                                        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="ReportAccountPayment.aspx?NodeId=1&SectionId=15">Báo cáo tài khoản thanh toán</asp:HyperLink></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown" id="tabConfiguration" runat="server">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Đối tác <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li id="pAgencyEdit" runat="server">
+                                        <asp:HyperLink ID="hlAgencyEdit" runat="server">Thêm đối tác</asp:HyperLink></li>
+                                    <li id="pAgencyList" runat="server">
+                                        <asp:HyperLink ID="hlAgencyList" runat="server">Quản lý đối tác</asp:HyperLink></li>
+                                    <li id="pAgencyPolicies" runat="server" style="display: none">
+                                        <asp:HyperLink ID="hlAgentList" runat="server">Partner Price Policy</asp:HyperLink></li>
+                                    <li id="pVoucherEdit" runat="server" style="display: none">
+                                        <asp:HyperLink ID="hlVoucherEdit" runat="server">Voucher Batch Creating</asp:HyperLink></li>
+                                    <li id="pVoucherList" runat="server" style="display: none">
+                                        <asp:HyperLink ID="hlVoucherList" runat="server">Voucher Batch Management</asp:HyperLink></li>
+                                    <li id="pVoucherTemplates" runat="server" style="display: none">
+                                        <asp:HyperLink ID="hlVoucherTemplates" runat="server">Voucher Template</asp:HyperLink>
+                                    </li>
+                                    <li id="pAgencyViewMeetings" runat="server" style="display: none">
+                                        <asp:HyperLink ID="hlViewMeetings" runat="server">Meeting Viewing</asp:HyperLink></li>
+                                    <li id="pAgencyLocation" runat="server" style="display: none">
+                                        <asp:HyperLink ID="hlAgencyLocation" runat="server">Location Management</asp:HyperLink></li>
+                                    <li style="display: none">
+                                        <asp:HyperLink ID="hlQuotationManagement" runat="server">Quotation Management</asp:HyperLink>
+                                    </li>
+                                    <li style="display: none">
+                                        <asp:HyperLink ID="hlContractManagement" runat="server">Contract Management</asp:HyperLink>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown" id="tabTrips" runat="server" style="display: none">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cruise & Trip <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li id="pTripEdit" runat="server">
+                                        <asp:HyperLink ID="hlTripEdit" runat="server">Trip Adding</asp:HyperLink></li>
+                                    <li id="pTripList" runat="server">
+                                        <asp:HyperLink ID="hlTripList" runat="server">Trip Management</asp:HyperLink></li>
+                                    <li id="pCruiseEdit" runat="server">
+                                        <asp:HyperLink ID="hlCruiseEdit" runat="server">Cruise Adding</asp:HyperLink></li>
+                                    <li id="pCruiseList" runat="server">
+                                        <asp:HyperLink ID="hlCruiseList" runat="server">Cruise Management</asp:HyperLink></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown" id="tabRoom" runat="server" style="display: none">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Room Manager <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li id="pRoomClass" runat="server">
+                                        <asp:HyperLink ID="hlRoomClass" runat="server">Room Class Management</asp:HyperLink></li>
+                                    <li id="pRoomType" runat="server">
+                                        <asp:HyperLink ID="hlRoomType" runat="server">Room Type Management</asp:HyperLink></li>
+                                    <li id="pRoomEdit" runat="server">
+                                        <asp:HyperLink ID="hlRoomEdit" runat="server">Room Adding</asp:HyperLink></li>
+                                    <li id="pRoomList" runat="server">
+                                        <asp:HyperLink ID="hlRoomList" runat="server">Room Management</asp:HyperLink></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown" id="tabCost" runat="server" style="display: none">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cost configuration <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li id="pExtraService" runat="server">
+                                        <asp:HyperLink ID="hlExtraOption" runat="server">Extra Option Manager</asp:HyperLink></li>
+                                    <li id="pCostingConfig" runat="server">
+                                        <asp:HyperLink ID="hlCosting" runat="server">Customer Expense</asp:HyperLink></li>
+                                    <li id="pDailyManualCost" runat="server">
+                                        <asp:HyperLink ID="hlExpenseDate" runat="server">Daily Expense</asp:HyperLink></li>
+                                    <li id="pExpensePeriod" runat="server">
+                                        <asp:HyperLink ID="hlExpensePeriod" runat="server">Monthly/Year Expense</asp:HyperLink></li>
+                                    <li id="pHaiPhong" runat="server">
+                                        <asp:HyperLink ID="hlHaiPhong" runat="server">Hai Phong Expense</asp:HyperLink></li>
+                                    <li id="pCostTypes" runat="server">
+                                        <asp:HyperLink ID="hlCostTypes" runat="server">Expense Type Configuration</asp:HyperLink></li>
+                                    <li id="pUSDRate" runat="server">
+                                        <asp:HyperLink ID="hlUSDRate" runat="server">USD to VND rate</asp:HyperLink></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Thực đơn <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <asp:HyperLink ID="hlMenuAdding" runat="server" NavigateUrl="MenuAdding.aspx?NodeId=1&SectionId=15">Thêm thực đơn</asp:HyperLink>
+                                    </li>
+                                    <li>
+                                        <asp:HyperLink ID="hlMenuManagement" runat="server" NavigateUrl="MenuManagement.aspx?NodeId=1&SectionId=15">Quản lý thực đơn</asp:HyperLink>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown" id="tabSetting" runat="server">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cài đặt<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <asp:HyperLink ID="hlPermissions" runat="server">Phân quyền</asp:HyperLink></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown" style="display: none">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Feedback <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <asp:HyperLink ID="hlAddQuestion" runat="server">Question Group Adding</asp:HyperLink></li>
+                                    <li>
+                                        <asp:HyperLink ID="hlQuestionList" runat="server">Question Group Overview</asp:HyperLink></li>
+                                    <li>
+                                        <asp:HyperLink ID="hlFeedbackReport" runat="server">Feedback Report</asp:HyperLink></li>
+                                    <li>
+                                        <asp:HyperLink ID="hlFeedbackResponse" runat="server">Feedback Response</asp:HyperLink></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown" style="display: none">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Document <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <asp:HyperLink ID="hlViewDocument" runat="server">Document Viewing</asp:HyperLink></li>
+                                    <li id="pDocumentManage" runat="server">
+                                        <asp:HyperLink ID="hlDocumentManage" runat="server">Document Management</asp:HyperLink></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-user fa-lg" aria-hidden="true"><%= UserCurrentGetName() %></i>
+                                    <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <asp:HyperLink ID="hlUserPanel" runat="server">Thông tin cá nhân</asp:HyperLink></li>
+                                    <li>
+                                        <asp:LinkButton ID="lbLogout" runat="server" OnClick="lbLogOut_Click">Đăng xuất</asp:LinkButton></li>
+                                </ul>
+                            </li>
+                            <li data-toggle="tooltip" data-placement="right" title="Pending bookings" style="display: none">
+                                <a id="bookingpending" data-toggle="popover">
+                                    <i class="fa fa-clock-o fa-lg" aria-hidden="true">
+                                        <span class="badge"><%= MyBookingPendingCount()%></span></i>
+                                </a>
+                            </li>
+                            <li data-toggle="tooltip" data-placement="right" title="Birthday reminder" style="display: none">
+                                <a id="birthday-reminder" data-toggle="popover">
+                                    <i class="fa fa-birthday-cake fa-lg" aria-hidden="true">
+                                        <span class="badge"><%= AgencyContactBirthdayCount() %></span></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 style="float: right; color: #5e5e5e">
+                        <asp:Label ID="lblTitle" runat="server"></asp:Label></h3>
+                </div>
+            </nav>
+            <div class="alert alert-success" role="alert">
+                <%=Session["SuccessMessage"] %>
+            </div>
+            <div class="alert alert-info" role="alert">
+                <%=Session["InfoMessage"] %>
+            </div>
+            <div class="alert alert-warning" role="alert">
+                <%=Session["WarningMessage"] %>
+            </div>
+            <div class="alert alert-danger" role="alert">
+                <%=Session["ErrorMessage"] %>
+            </div>
+            <asp:ContentPlaceHolder ID="AdminContentMain" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="birthday-panel" class="hidden">
+            <table class="table table-bordered table-hover">
+                <tr>
+                    <th>Contact</th>
+                    <th>Agency</th>
+                </tr>
+                <tr>
+                    <asp:Repeater runat="server" ID="rptBirthday">
+                        <ItemTemplate>
+                            <div title="AgencyContact" style="display: block; margin-top: 6px">
+                                <td>
+                                    <a href='AgencyEdit.aspx?NodeId=1&SectionId=15&AgencyId=<%#Eval("Agency.Id") %>'>
+                                        <%#Eval("Name")%></a></td>
+                                <td>
+                                    <a href='AgencyEdit.aspx?NodeId=1&SectionId=15&AgencyId=<%#Eval("Agency.Id") %>'>
+                                        <%#Eval("Agency.Name")%></a></td>
+                            </div>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </tr>
+            </table>
+        </div>
+        <div id="bookingpending-panel" class="hidden">
+            <p>
+                You have <strong>(<%= MyBookingPendingCount() %>)</strong> booking(s) pending
+            </p>
+            <p>
+                You have <strong style="color: red;">(<%= MyTodayBookingPendingCount() %>)</strong> booking(s) pending need confirm in 36h
+            </p>
+            <p><%= SystemBookingPendingMessaging() %></p>
+            <a href="OrderReport.aspx?NodeId=1&SectionId=15">My booking pending</a><br />
+            <asp:HyperLink runat="server" ID="hlAllPending" Text="All pending"></asp:HyperLink>
+        </div>
+    </form>
+    <footer>
+        <br />
+        <br />
+        <br />
+        <br />
+    </footer>
+    <script type="text/javascript" src="/scripts/jquery/v3.1.1/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="/scripts/jqueryui/v1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/scripts/jqueryui/v1.12.1/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="/scripts/bootstrap/v3.3.7/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/scripts/datetimepicker/v2.5.4/jquery.datetimepicker.full.min.js"></script>
+    <script type="text/javascript" src="/scripts/colorbox/v1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="/scripts/autosize/v3.0.20/autosize.min.js"></script>
+    <script type="text/javascript" src="/scripts/inputmask/v3.3.6/jquery.inputmask.bundle.min.js"></script>
+    <script type="text/javascript" src="/scripts/inputmask/v3.3.6/inputmask.binding.js"></script>
+    <script type="text/javascript" src="/scripts/mo/getquerystringparamsvalue.js"></script>
+    <script type="text/javascript" src="/scripts/html2canvas/v1.0.0/html2canvas.js"></script>
+    <script type="text/javascript" src="/scripts/angularjs/v1.6.6/angular.js"></script>
+    <script type="text/javascript" src="/modules/sails/admin/app.module.js"></script>
+    <script type="text/javascript" src="/scripts/datatable/v1.10.16/jquery.datatables.min.js"></script>
+    <script type="text/javascript" src="/scripts/datatable/v1.10.16/datatables.bootstrap.min.js"></script>
+    <script type="text/javascript" src="/scripts/jqueryvalidation/v1.17.0/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="/scripts/jqueryvalidation/v1.17.0/additional-methods.min.js"></script>
+    <script type="text/javascript" src="/scripts/notify/notify.js"></script>
+    <script type="text/javascript" src="/Scripts/tooltipster/js/tooltipster.bundle.min.js"></script>
+    <script type="text/javascript" src="/scripts/jqueryconfirm/v3.3.0/jquery-confirm.js"></script>
+    <script>
+        var tooltip = {
+            config: function () {
+                $('[data-toggle="tooltip"]').tooltip({
+                    trigger: "hover",
+                    html: true,
+                    container: "body",
+                });
+            },
+
+            hideIfBlank: function () {
+                $('[data-toggle="tooltip"]').each(function (i, e) {
+                    if ($(e).attr("data-original-title") == " ") {
+                        $(e).removeAttr("data-original-title");
+                    } else
+                        if ($(e).attr("data-original-title").trim() == "") {
+                            $(e).hide();
+                        }
+                })
+            }
+        }
+        var popOver = {
+            configBirdayReminder: function () {
+                $("#birthday-reminder").popover({
+                    html: true,
+                    placement: "bottom",
+                    title: "<em>Birthday reminder <%=DateTime.Today.ToString("dd/MM/yyyy")%></em>",
+                    content: $("#birthday-panel").html(),
+                    container: "body",
+                });
+            },
+
+            configBookingPending: function () {
+                $("#bookingpending").popover({
+                    html: true,
+                    placement: "bottom",
+                    content: $("#bookingpending-panel").html(),
+                    container: "body",
+                })
+            }
+        }
+        var textArea = {
+            autosize: function () {
+                autosize($("textarea"));
+            }
+        }
+        var message = {
+            hideIfBlank: function () {
+                $("[role='alert']").each(function (i, e) {
+                    if ($(e).html().trim() == "") {
+                        $(e).hide();
+                    }
+                })
+            }
+        }
+        var input = {
+            removeMultipleSpace: function () {
+                $("[type = 'text'], textarea").blur(function () {
+                    $(this).val($(this).val().replace(/[ \t]+/gm, " "));
+                })
+            }
+        }
+        $(function () {
+            tooltip.config();
+            tooltip.hideIfBlank();
+            popOver.configBirdayReminder();
+            popOver.configBookingPending();
+            textArea.autosize();
+            message.hideIfBlank();
+            input.removeMultipleSpace();
+        });
+    </script>
+    <script>
+        $('body').on('click', function (e) {
+            if ($(e.target).data('toggle') !== 'popover'
+                && $(e.target).parents('[data-toggle="popover"]').length === 0
+                && $(e.target).parents('.popover.in').length === 0) {
+                $('[data-toggle="popover"]').popover('hide');
+            }
+        });
+    </script>
+    <script>
+        $(function () {
+            $("[data-control='datetimepicker']").datetimepicker({
+                timepicker: false,
+                format: 'd/m/Y',
+                scrollInput: false,
+                scrollMonth: false,
+            })
+            $("[data-control='timepicker']").datetimepicker({
+                datepicker: false,
+                timepicker: true,
+                format: 'H:i',
+                scrollInput: false,
+                scrollMonth: false,
+            })
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".checkbox label").each(function (i, e) {
+                var label = $(e).find("label").html();
+                $(e).append(label);
+                $(e).find("label").remove();
+            });
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".radio-inline label").addClass("radio-inline").css("padding-left", "0");
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('input[type="text"]').keydown(function () {
+                $(this).trigger('input');
+                $(this).trigger('change');
+            });
+        })
+    </script>
+
+    <asp:ContentPlaceHolder ID="ScriptsMain" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>

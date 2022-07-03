@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="Portal.Modules.OrientalSails.Domain"
+                   assembly="Portal.Modules.OrientalSails">
+	<class name="RestaurantBooking" table="RestaurantBooking" batch-size="10">
+		<cache usage="read-write"/>
+		<id name="Id">
+			<generator class="native" />
+		</id>
+		<property name ="Date" column="Date" access="field.camelcase"/>
+		<property name ="Status" column="Status" access="field.camelcase"/>
+		<property name ="Time"/>
+		<property name ="NumberOfPaxAdult"/>
+		<property name ="NumberOfPaxChild"/>
+		<property name ="NumberOfPaxBaby"/>
+		<property name="CostPerPersonAdult"/>
+		<property name="CostPerPersonChild"/>
+		<property name="CostPerPersonBaby"/>
+		<property name="NumberOfDiscountedPaxAdult"/>
+		<property name="NumberOfDiscountedPaxChild"/>
+		<property name="NumberOfDiscountedPaxBaby"/>
+		<property name="SpecialRequest"/>
+		<property name="Payment"/>
+		<property name="TotalPaid"/>
+		<property name="Receivable"/>
+		<property name="MarkIsPaid"/>
+		<property name="VAT"/>
+		<property name="IsExportVat"/>
+		<property name="PartOfDay"/>
+		<property name="MenuDetail"/>
+		<property name="CreatedDate"/>
+		<property name="LastEditedDate"/>
+		<property name="TotalPriceOfSet"/>
+		<property name="ReceiptVoucher"/>
+		<property name="LockStatus" column="LockStatus" access="field.camelcase"/>
+		<property name="LastUnlockedTime"/>
+		<property name="OnlyUnlockByRole"/>
+		<property name="Reason"/>
+		<property name="VITRIBANAN"/>
+		<property name="GALA"/>
+		<many-to-one name="Agency" column="AgencyId" class="Agency"/>
+		<many-to-one name="Menu" column="MenuId" class="Menu"/>
+		<many-to-one name="Booker" column="Booker_AgencyContactId" class="AgencyContact"/>
+		<many-to-one name="CreatedBy" column="CreatedBy_UserId" class="CMS.Core.Domain.User,CMS.Core"/>
+		<many-to-one name="LastEditedBy" column="LastEditedBy_UserId" class="CMS.Core.Domain.User,CMS.Core"/>
+
+		<bag name="ListPaymentHistory" inverse="true" batch-size="10">
+			<key column="BookingId"/>
+			<one-to-many class="PaymentHistory"/>
+		</bag>
+		<bag name="ListGuide" inverse="true" batch-size ="10">
+			<key column="RestaurantBookingId"/>
+			<one-to-many class="Guide"/>
+		</bag>
+		<bag name="ListCommission" inverse="true" batch-size ="10">
+			<key column="RestaurantBookingId"/>
+			<one-to-many class="Commission"/>
+		</bag>
+		<bag name="ListServiceOutside" inverse="true" batch-size ="10">
+			<key column="RestaurantBookingId"/>
+			<one-to-many class="ServiceOutside"/>
+		</bag>
+		<bag name="ListTrackingChangeBooking" inverse="true" batch-size="10">
+			<key column="BookingId"/>
+			<one-to-many class="TrackingChangeBooking"/>
+		</bag>
+	</class>
+</hibernate-mapping>

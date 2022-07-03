@@ -1,0 +1,16 @@
+<tr>
+                <td width=121 valign=top style='width:90.9pt;padding:0in 5.4pt 0in 5.4pt'>
+                    <p class=MsoPlainText>
+                        <span style='font-family:"Arial","sans-serif"'>
+                            FOC
+                        </span>
+                    </p>
+                </td>
+                <td colspan="3" width=315 valign=top style='width:236.35pt;padding:0in 5.4pt 0in 5.4pt'>
+                    <p class=MsoPlainText>
+                        <span style='font-family: "Arial", "sans-serif"'>
+                            {FOCADULT} người lớn&nbsp;&nbsp;&nbsp;&nbsp;			{FOCCHILD} trẻ em
+                        </span>
+                    </p>
+                </td>
+            </tr>
