@@ -186,7 +186,7 @@ namespace Portal.Modules.OrientalSails.Web.Admin
             }
             if (!Page.IsPostBack)
             {
-               
+
                 txtDate.Text = Date.ToString("dd/MM/yyyy");
                 DisplayData();
             }
@@ -582,6 +582,38 @@ namespace Portal.Modules.OrientalSails.Web.Admin
             excelFile.Save(Response, string.Format("lenh_bep_{0:dd_MM_yyy}.xls", Date));
         }
 
+        protected void btnExportForKitchen2_OnClick(object sender, EventArgs e)
+        {
+            if (!AllowExportForKitchen)
+            {
+                ShowErrors("Bạn không có quyền xuất lệnh bếp");
+                return;
+            }
+
+            ExcelFile excelFile = ExcelFile.Load(Server.MapPath("/Modules/Sails/Admin/ExportTemplates/lenh_cho_bep_2.xlsx"));
+            GemBox.Spreadsheet.ExcelWorksheet sheet = excelFile.Worksheets[0];
+            // Dòng dữ liệu đầu tiên
+            const int firstrow = 1;
+            const int secondrow = 2;
+            int crow = 3;
+            var list = RestaurantBookingByDateBLL.RestaurantBookingGetByKitchen(Date).OrderBy(x => x.PartOfDay).ThenBy(x => x.Time);
+
+            foreach (RestaurantBooking restaurantBooking in list)
+            {
+                sheet.Rows.InsertEmpty(crow, 1);
+                sheet.Rows.InsertCopy(crow, 1, sheet.Rows[secondrow]);
+                sheet.Cells[crow, 1].Value = restaurantBooking.SpecialRequest + Environment.NewLine + restaurantBooking.MenuDetail;
+                sheet.Rows.InsertCopy(crow, 1, sheet.Rows[firstrow]);         
+                if (restaurantBooking.Agency != null) sheet.Cells[crow, 0].Value = restaurantBooking.Agency.TradingName;
+                sheet.Cells[crow, 1].Value = restaurantBooking.NumberOfPaxAdult + restaurantBooking.NumberOfPaxChild + restaurantBooking.NumberOfPaxBaby;
+            }
+
+            sheet.Rows.Remove(1);
+            sheet.Rows.Remove(1);
+            excelFile.Save(Response, string.Format("lenh_bep_{0:dd_MM_yyy}.xls", Date));
+            
+        }
+
         public string GetLinkPartOfDayFilter(int partOfDay)
         {
             if (partOfDay == 0)
@@ -691,7 +723,7 @@ namespace Portal.Modules.OrientalSails.Web.Admin
             var restaurantBookingCancelledOrChangeDate = restaurantBooking.CancelledOrChangeDate(Date);
             if (restaurantBookingCancelledOrChangeDate == "Cancel")
             {
-                output += "Hủy" + "<br/>" + "Lý do hủy: "+ restaurantBooking.Reason + "<br/>";
+                output += "Hủy" + "<br/>" + "Lý do hủy: " + restaurantBooking.Reason + "<br/>";
             }
             if (restaurantBookingCancelledOrChangeDate == "ChangeDate")
             {

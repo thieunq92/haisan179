@@ -269,6 +269,7 @@
                     <div class="col-xs-12">
                         <asp:Button runat="server" ID="btnSalesReportExport" OnClick="btnSalesReportExport_Click" Text="Trích xuất BCDT" CssClass="btn btn-primary" />
                         <asp:Button runat="server" ID="btnExportForKitchen" OnClick="btnExportForKitchen_OnClick" Text="Xuất lệnh bếp" CssClass="btn btn-primary" />
+                        <asp:Button runat="server" ID="btnExportForKitchen2" OnClick="btnExportForKitchen2_OnClick" Text="Xuất lệnh bếp 2" CssClass="btn btn-primary" />
                         <asp:Button runat="server" ID="btnLockDate" OnClick="btnLockDate_Click" Text="Khóa booking ngày" OnClientClick="return confirm('Xác nhận khóa tất cả booking trong ngày này')" CssClass="btn btn-primary" />
                     </div>
                 </div>

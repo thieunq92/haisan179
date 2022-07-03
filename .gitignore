@@ -2,3 +2,12 @@ CMS.Core/bin/
 CMS.Core/obj/
 CMS.ServerControls/bin/
 CMS.ServerControls/obj/
+CMS.Web/Bin/
+CMS.Web/obj/
+Portal.Modules.OrientalSails.HangFire/bin/
+Portal.Modules.OrientalSails.HangFire/obj/
+Portal.Modules.OrientalSails.Service.Share/bin/Debug/Portal.Modules.OrientalSails.Service.Share.dll
+Portal.Modules.OrientalSails.Service.Share/bin/
+Portal.Modules.OrientalSails.Service.Share/obj/
+Portal.Modules.OrientalSails/Bin/
+Portal.Modules.OrientalSails/obj/

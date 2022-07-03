@@ -1,0 +1,78 @@
+2022-07-03 10:10:37,233 [60] ERROR NHibernate.Event.Default.AbstractFlushingEventListener [(null)] <(null)> - Could not synchronize database state with session
+NHibernate.StaleObjectStateException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [CMS.Core.Domain.User#74]
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Check(Int32 rows, Object id, Int32 tableNumber, IExpectation expectation, IDbCommand statement)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)
+   at NHibernate.Action.EntityUpdateAction.Execute()
+   at NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+2022-07-03 10:10:37,276 [60] ERROR Castle.Services.Transaction.TransactionBase [(null)] <(null)> - Resource state: Castle.Facilities.NHibernateIntegration.Internal.ResourceAdapter
+2022-07-03 10:10:37,368 [60] ERROR CMS.Web.HttpModules.AuthenticationModule [(null)] <(null)> - An error occured while logging in user bitcorp.
+2022-07-03 10:10:52,437 [64] ERROR NHibernate.Event.Default.AbstractFlushingEventListener [(null)] <(null)> - Could not synchronize database state with session
+NHibernate.StaleObjectStateException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [CMS.Core.Domain.User#74]
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Check(Int32 rows, Object id, Int32 tableNumber, IExpectation expectation, IDbCommand statement)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)
+   at NHibernate.Action.EntityUpdateAction.Execute()
+   at NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+2022-07-03 10:10:52,438 [64] ERROR Castle.Services.Transaction.TransactionBase [(null)] <(null)> - Resource state: Castle.Facilities.NHibernateIntegration.Internal.ResourceAdapter
+2022-07-03 10:10:52,556 [64] ERROR CMS.Web.HttpModules.AuthenticationModule [(null)] <(null)> - An error occured while logging in user bitcorp.
+2022-07-03 10:10:58,731 [62] ERROR NHibernate.Event.Default.AbstractFlushingEventListener [(null)] <(null)> - Could not synchronize database state with session
+NHibernate.StaleObjectStateException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [CMS.Core.Domain.User#74]
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Check(Int32 rows, Object id, Int32 tableNumber, IExpectation expectation, IDbCommand statement)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)
+   at NHibernate.Action.EntityUpdateAction.Execute()
+   at NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+2022-07-03 10:10:58,731 [62] ERROR Castle.Services.Transaction.TransactionBase [(null)] <(null)> - Resource state: Castle.Facilities.NHibernateIntegration.Internal.ResourceAdapter
+2022-07-03 10:10:58,836 [62] ERROR CMS.Web.HttpModules.AuthenticationModule [(null)] <(null)> - An error occured while logging in user bitcorp.
+2022-07-03 10:11:00,641 [63] ERROR NHibernate.Event.Default.AbstractFlushingEventListener [(null)] <(null)> - Could not synchronize database state with session
+NHibernate.StaleObjectStateException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [CMS.Core.Domain.User#74]
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Check(Int32 rows, Object id, Int32 tableNumber, IExpectation expectation, IDbCommand statement)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)
+   at NHibernate.Action.EntityUpdateAction.Execute()
+   at NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+2022-07-03 10:11:00,642 [63] ERROR Castle.Services.Transaction.TransactionBase [(null)] <(null)> - Resource state: Castle.Facilities.NHibernateIntegration.Internal.ResourceAdapter
+2022-07-03 10:11:00,731 [63] ERROR CMS.Web.HttpModules.AuthenticationModule [(null)] <(null)> - An error occured while logging in user bitcorp.
+2022-07-03 10:11:02,233 [61] ERROR NHibernate.Event.Default.AbstractFlushingEventListener [(null)] <(null)> - Could not synchronize database state with session
+NHibernate.StaleObjectStateException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [CMS.Core.Domain.User#74]
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Check(Int32 rows, Object id, Int32 tableNumber, IExpectation expectation, IDbCommand statement)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)
+   at NHibernate.Action.EntityUpdateAction.Execute()
+   at NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+2022-07-03 10:11:02,234 [61] ERROR Castle.Services.Transaction.TransactionBase [(null)] <(null)> - Resource state: Castle.Facilities.NHibernateIntegration.Internal.ResourceAdapter
+2022-07-03 10:11:02,324 [61] ERROR CMS.Web.HttpModules.AuthenticationModule [(null)] <(null)> - An error occured while logging in user bitcorp.
+2022-07-03 10:11:22,635 [58] ERROR NHibernate.Event.Default.AbstractFlushingEventListener [(null)] <(null)> - Could not synchronize database state with session
+NHibernate.StaleObjectStateException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [CMS.Core.Domain.User#74]
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Check(Int32 rows, Object id, Int32 tableNumber, IExpectation expectation, IDbCommand statement)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)
+   at NHibernate.Action.EntityUpdateAction.Execute()
+   at NHibernate.Engine.ActionQueue.Execute(IExecutable executable)
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)
+   at NHibernate.Engine.ActionQueue.ExecuteActions()
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)
+2022-07-03 10:11:22,635 [58] ERROR Castle.Services.Transaction.TransactionBase [(null)] <(null)> - Resource state: Castle.Facilities.NHibernateIntegration.Internal.ResourceAdapter
+2022-07-03 10:11:22,728 [58] ERROR CMS.Web.HttpModules.AuthenticationModule [(null)] <(null)> - An error occured while logging in user bitcorp.

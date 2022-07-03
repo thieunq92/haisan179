@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Portal.Modules.OrientalSails.Web.Admin {
-    
-    
-    public partial class RestaurantBookingByDate {
-        
+namespace Portal.Modules.OrientalSails.Web.Admin
+{
+
+
+    public partial class RestaurantBookingByDate
+    {
+
         /// <summary>
         /// plhAdminContent control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace Portal.Modules.OrientalSails.Web.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.PlaceHolder plhAdminContent;
-        
+
         /// <summary>
         /// txtDate control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace Portal.Modules.OrientalSails.Web.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDate;
-        
+
         /// <summary>
         /// btnDisplay control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace Portal.Modules.OrientalSails.Web.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnDisplay;
-        
+
         /// <summary>
         /// txtBookingCode control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace Portal.Modules.OrientalSails.Web.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtBookingCode;
-        
+
         /// <summary>
         /// rptBooking control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace Portal.Modules.OrientalSails.Web.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Repeater rptBooking;
-        
+
         /// <summary>
         /// rptCancelledAndChangeDateBooking control.
         /// </summary>
@@ -65,7 +67,7 @@ namespace Portal.Modules.OrientalSails.Web.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Repeater rptCancelledAndChangeDateBooking;
-        
+
         /// <summary>
         /// btnSalesReportExport control.
         /// </summary>
@@ -74,7 +76,7 @@ namespace Portal.Modules.OrientalSails.Web.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnSalesReportExport;
-        
+
         /// <summary>
         /// btnExportForKitchen control.
         /// </summary>
@@ -83,7 +85,16 @@ namespace Portal.Modules.OrientalSails.Web.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnExportForKitchen;
-        
+
+        /// <summary>
+        /// btnExportForKitchen2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnExportForKitchen2;
+
         /// <summary>
         /// btnLockDate control.
         /// </summary>
@@ -92,15 +103,17 @@ namespace Portal.Modules.OrientalSails.Web.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnLockDate;
-        
+
         /// <summary>
         /// Master property.
         /// </summary>
         /// <remarks>
         /// Auto-generated property.
         /// </remarks>
-        public new Portal.Modules.OrientalSails.Web.Admin.MO Master {
-            get {
+        public new Portal.Modules.OrientalSails.Web.Admin.MO Master
+        {
+            get
+            {
                 return ((Portal.Modules.OrientalSails.Web.Admin.MO)(base.Master));
             }
         }
