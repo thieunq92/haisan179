@@ -11,3 +11,5 @@ Portal.Modules.OrientalSails.Service.Share/bin/
 Portal.Modules.OrientalSails.Service.Share/obj/
 Portal.Modules.OrientalSails/Bin/
 Portal.Modules.OrientalSails/obj/
+CMS.Web/log/
+.vs/

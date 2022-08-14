@@ -12,6 +12,7 @@ using System.Collections.Specialized;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -596,22 +597,46 @@ namespace Portal.Modules.OrientalSails.Web.Admin
             const int firstrow = 1;
             const int secondrow = 2;
             int crow = 3;
-            var list = RestaurantBookingByDateBLL.RestaurantBookingGetByKitchen(Date).OrderBy(x => x.PartOfDay).ThenBy(x => x.Time);
+            var list = RestaurantBookingByDateBLL.RestaurantBookingGetByKitchen(Date).OrderBy(x => x.PartOfDay).ThenBy(x => x.Time).ToList();
 
-            foreach (RestaurantBooking restaurantBooking in list)
+            for (var i = 0; i < list.Count(); i += 2)
             {
+                var booking1 = list[i];
+                RestaurantBooking booking2 = null;
+
+                if (i + 1 < list.Count())
+                    booking2 = list[i + 1];
+
                 sheet.Rows.InsertEmpty(crow, 1);
                 sheet.Rows.InsertCopy(crow, 1, sheet.Rows[secondrow]);
-                sheet.Cells[crow, 1].Value = restaurantBooking.SpecialRequest + Environment.NewLine + restaurantBooking.MenuDetail;
-                sheet.Rows.InsertCopy(crow, 1, sheet.Rows[firstrow]);         
-                if (restaurantBooking.Agency != null) sheet.Cells[crow, 0].Value = restaurantBooking.Agency.TradingName;
-                sheet.Cells[crow, 1].Value = restaurantBooking.NumberOfPaxAdult + restaurantBooking.NumberOfPaxChild + restaurantBooking.NumberOfPaxBaby;
+                sheet.Cells[crow, 1].Value = Regex.Replace(booking1.SpecialRequest + Environment.NewLine + booking1.MenuDetail, @"[\r\n]+", "\r\n");
+
+                if (booking2 != null)
+                    sheet.Cells[crow, 2].Value = Regex.Replace(booking2.SpecialRequest + Environment.NewLine + booking2.MenuDetail, @"[\r\n]+", "\r\n");
+
+                sheet.Rows.InsertCopy(crow, 1, sheet.Rows[firstrow]);
+                if (booking1.Agency != null) sheet.Cells[crow, 0].Value = booking1.Agency.TradingName;
+                sheet.Cells[crow, 1].Value = booking1.NumberOfPaxAdult + booking1.NumberOfPaxChild + booking1.NumberOfPaxBaby;
+
+                if (booking2 != null)
+                {
+                    if (booking2.Agency != null) sheet.Cells[crow, 2].Value = booking2.Agency.TradingName;
+                    sheet.Cells[crow, 3].Value = booking2.NumberOfPaxAdult + booking2.NumberOfPaxChild + booking2.NumberOfPaxBaby;
+                }
             }
 
             sheet.Rows.Remove(1);
             sheet.Rows.Remove(1);
+
+            if (list.Count % 2 != 0)
+            {
+                sheet.Cells[1, 3].Clear(ClearOptions.All);
+                sheet.Cells[1, 2].Clear(ClearOptions.All);
+                sheet.Cells[2, 3].Clear(ClearOptions.All);
+
+            }
             excelFile.Save(Response, string.Format("lenh_bep_{0:dd_MM_yyy}.xls", Date));
-            
+
         }
 
         public string GetLinkPartOfDayFilter(int partOfDay)
